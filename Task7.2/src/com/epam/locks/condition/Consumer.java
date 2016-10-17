@@ -14,7 +14,7 @@ public class Consumer implements Runnable{
 
     public void run(){
         for (int i = 1; i < 6; i++) {
-            store.get();
+            store.get(); // Этот поток пытается получить элемент
         }
     }
 }

@@ -28,7 +28,7 @@ public class Store{
             System.out.println("Покупатель купил 1 товар");
             System.out.println("Товаров на складе: " + product);
 
-            // сигнализируем
+            // сигнализируем всем потокам
             condition.signalAll();
         }
         catch (InterruptedException e){
@@ -49,7 +49,7 @@ public class Store{
             product++;
             System.out.println("Производитель добавил 1 товар");
             System.out.println("Товаров на складе: " + product);
-            // сигнализируем
+            // сигнализируем всем потокам
             condition.signalAll();
         }
         catch (InterruptedException e){

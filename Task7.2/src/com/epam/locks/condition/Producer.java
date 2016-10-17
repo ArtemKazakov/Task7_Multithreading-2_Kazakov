@@ -14,7 +14,7 @@ public class Producer implements Runnable{
 
     public void run(){
         for (int i = 1; i < 6; i++) {
-            store.put();
+            store.put(); // Этот поток пытается получить элемент
         }
     }
 }
